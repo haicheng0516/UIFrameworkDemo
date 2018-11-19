@@ -16,7 +16,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        UIImageView *nilDataImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
+        UIImageView *nilDataImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"WechatIMG2"]];
         nilDataImage.frame = CGRectMake(FULL_SCREEN_WIDTH/3, 80, FULL_SCREEN_WIDTH/3, FULL_SCREEN_HEIGHT/8);
     
         UILabel *nilDataLabel = [[UILabel alloc] initWithFrame:CGRectMake(FULL_SCREEN_WIDTH/3+5, 80+FULL_SCREEN_HEIGHT/8, FULL_SCREEN_WIDTH/2, 40)];

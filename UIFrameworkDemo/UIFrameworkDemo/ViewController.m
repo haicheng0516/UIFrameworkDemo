@@ -21,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:self.scTableView];
 }
 
 
@@ -33,7 +35,7 @@
 #pragma mark -- 懒加载
 -(SCTableView *)scTableView{
     if (!_scTableView) {
-        _scTableView = [[SCTableView alloc] initWithFrame:CGRectMake(0, 0, FULL_SCREEN_WIDTH, FULL_SCREEN_HEIGHT)];
+        _scTableView = [[SCTableView alloc] initWithFrame:CGRectMake(0, -Height_StatusBar, FULL_SCREEN_WIDTH, FULL_SCREEN_HEIGHT)];
         _scTableView.cellHeight = 230;
         
 //        [_scTableView registerClass:<#(nullable Class)#> forCellReuseIdentifier:<#(nonnull NSString *)#>]
